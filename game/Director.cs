@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 namespace jumper
 {
+    // Class that controls the function of the game
     public class Director
     {
         public jump_guy _jumper = new jump_guy();
@@ -18,7 +19,7 @@ namespace jumper
         { 
             
         }
-
+        // Initializes the game
         public void StartGame()
         {
             _jumper.CreateJumper();
@@ -35,7 +36,7 @@ namespace jumper
             }
             
         }
-
+        // Collects the inputs from the user
         public void GetInputs()
         {
             
@@ -49,7 +50,7 @@ namespace jumper
             _jumper.DisplayJumper();
             guess = _terminalService.ReadText("Guess a letter [a-z]: ");
         }
-
+        // Updates the game based on the user input
         public void DoUpdates()
         {
             if (answer.Contains(guess))
@@ -69,7 +70,7 @@ namespace jumper
             }
                 
         }
-
+        // Displays output if condition is met
         public void DoOutputs()
         {
             if (mistakecount >= 4)
