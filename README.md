@@ -2,12 +2,23 @@
 
 This is a game called junper similar to hangman. The program takes a random word from a list of about 850 words and has you try to guess the letters of the random word. If you guess wrong a level of the parachute will disapear for the jumper, but if you get one right you will be one step closer to winning!
 
-There are 4 classes in this game:
+## Getting Started
+Make sure you have dotnet 6.0 or newer installed on your machine. Open 
+a terminal and browse to the project's root folder. Start the program 
+by running the following commands.
+```
+dotnet build
+dotnet run 
+```
 
-Jumper: Involved in creating the jumper figure that you see in the terminal. Changes the jumper when you get something wrong.
+## Project Structure
+The project files and folders are organized as follows:
 
-Words: Pulls words from the word list, and returns it to the main program as a list of the letters in the word.
-
-Director: Runs the process of the game with getting the inputs and executing the outputs.
-
-Terminal Service: Involved in printing the game to the terminal and recieving inputs.
+root                    (project root folder)
++-- Game                (source code folder)
++-- Program.cs          (program entry point)    
++-- README.md           (general info)
++-- Cse210Starter.csproj       (dotnet project file)
+```
+## Author
+Justin Morley
