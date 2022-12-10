@@ -20,5 +20,6 @@ root                    (project root folder)
 +-- README.md           (general info)
 +-- Cse210Starter.csproj       (dotnet project file)
 ```
-## Author
+## Author  
+
 Justin Morley
